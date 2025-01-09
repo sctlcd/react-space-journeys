@@ -1,3 +1,55 @@
 .App {
   text-align: center;
 }
+
+body {
+  background-color: #000000;
+  height: 1200px;
+}
+
+.space {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: end;
+}
+
+.env {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- */
+
+.btn {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20vh;
+  border: 2px solid #000000;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #ffffff;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background: rgba(220, 53, 69, 0.75);
+  border-color: rgba(220, 53, 69, 0.75);
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  color: #ffffff;
+  border-color: #17a2b8;
+}
+
+.btn-info:hover {
+  background: rgba(23, 162, 184, 0.75);
+  border-color: rgba(23, 162, 184, 0.75);
+}
