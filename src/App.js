@@ -1,5 +1,6 @@
 import './App.css';
 import Button from './components/Button';
+import SpaceShipObject from './objects/SpaceShipObject';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <section className="env">
           {/* <EarthObject /> */}
           {/* <MoonObject /> */}
-          {/* <SpaceShipObject /> */}
+          <SpaceShipObject />
         </section>
         <Button 
           text="Land" 
