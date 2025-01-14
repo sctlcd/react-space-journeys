@@ -1,5 +1,5 @@
 import React from 'react';
-import ship from "./../images/space_ship_5.png";
+import ship from "./../images/space_ship_3.png";
 
 export default function SpaceShipObject( scale, start ) {
   let animation = start;
@@ -9,7 +9,7 @@ export default function SpaceShipObject( scale, start ) {
         src={ship}
         className={animation}
         alt="Space ship"
-        style={{ position: "absolute", bottom: 50, zIndex: 1, width: 100 }}
+        style={{ position: "absolute", bottom: 50, zIndex: 1, width: 300 }}
       />
     </>
   )

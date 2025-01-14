@@ -23,9 +23,9 @@ body {
 }
 
 .earth {
-  width: 19rem;
+  width: 30rem;
   position: absolute;
-  top: 0;
+  bottom: 0;
 }
 
 .moon {
@@ -37,11 +37,11 @@ body {
 /* --- */
 
 .btn {
-  height: 100px;
-  width: 100px;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   margin-bottom: 20vh;
-  border: 2px solid #000000;
+  border: 0.125px solid #000000;
 }
 
 .btn-danger {
