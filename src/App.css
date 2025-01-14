@@ -28,6 +28,12 @@ body {
   top: 0;
 }
 
+.moon {
+  width: 200px;
+  position: absolute;
+  top: 0;
+}
+
 /* --- */
 
 .btn {
