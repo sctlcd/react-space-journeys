@@ -22,6 +22,12 @@ body {
   align-items: center;
 }
 
+.earth {
+  width: 19rem;
+  position: absolute;
+  top: 0;
+}
+
 /* --- */
 
 .btn {
