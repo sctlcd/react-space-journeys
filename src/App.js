@@ -1,7 +1,6 @@
 import './App.css';
 import Button from './components/Button';
 import SpaceShipObject from './objects/SpaceShipObject';
-// import SpaceShip from "./images/space_ship_8.svg";
 
 function App() {
   return (
