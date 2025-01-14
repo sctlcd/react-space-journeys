@@ -1,6 +1,7 @@
 import './App.css';
 import Button from './components/Button';
 import SpaceShipObject from './objects/SpaceShipObject';
+// import SpaceShip from "./images/space_ship_8.svg";
 
 function App() {
   return (
@@ -9,18 +10,15 @@ function App() {
         <Button 
           text="Launch" 
           btnClass={"btn-danger"} 
-          onClick={""}
-
         />
         <section className="env">
           {/* <EarthObject /> */}
           {/* <MoonObject /> */}
-          <SpaceShipObject />
+          <SpaceShipObject scale={10}/>
         </section>
         <Button 
           text="Land" 
           btnClass={"btn-info"} 
-          onClick={""}
         />
       </div>
     </div>
