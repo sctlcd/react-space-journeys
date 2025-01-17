@@ -88,7 +88,7 @@ body {
   width: 8.5rem;
 }
 
-button text {
+button label {
   color: #ffffff;
   margin: 1rem 0;
   font-size: medium;
@@ -97,6 +97,17 @@ button text {
 button div {
   color: #ffffff;
   margin: 0.2rem 0 0 0;
+}
+
+.launch {
+  transform: translateY(-85vh);
+  transition: 7s ease-in;
+  opacity: 0;
+}
+
+.land {
+  transform: translateY(0);
+  transition: 7s ease-in-out;
 }
 
 /* --- */
