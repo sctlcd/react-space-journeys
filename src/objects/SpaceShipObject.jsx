@@ -1,14 +1,15 @@
 import React from 'react';
-import ship from "./../images/space_ships/space_ship_2.png";
+import ship from "./../images/space_ships/space_ship_1.png";
 
-export default function SpaceShipObject( scale, start ) {
-  let animation = start;
+export default function SpaceShipObject({scale, launch}) {
+  let animation = launch;
   return (
     <>
       <img 
         src={ship}
-        className={"spaceship"}
         alt="space ship"
+        style={{ position: "absolute", bottom: 160 , zIndex: 1, width: scale }}
+        className={animation}
       />
     </>
   )

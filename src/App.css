@@ -26,12 +26,23 @@ body {
   width: 32rem;
   position: absolute;
   bottom: 0;
+  animation: rotate 50s linear infinite;
 }
 
 .moon {
   width: 12rem;
   position: absolute;
   margin-top: 2vh;
+  animation: rotate 50s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .portal-gun,
@@ -85,10 +96,9 @@ body {
   bottom: 6rem;
   z-index: 1;
   transform: rotate(-45deg);
-  width: 8.5rem;
 }
 
-button text {
+button label {
   color: #ffffff;
   margin: 1rem 0;
   font-size: medium;
@@ -97,6 +107,17 @@ button text {
 button div {
   color: #ffffff;
   margin: 0.2rem 0 0 0;
+}
+
+.launch {
+  transform: translateY(-76vh);
+  transition: 7s ease-in;
+  /* opacity: 0.5; */
+}
+
+.land {
+  transform: translateY(0);
+  transition: 7s ease-in-out;
 }
 
 /* --- */
