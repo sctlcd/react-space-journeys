@@ -14,21 +14,26 @@ import SpaceShip6 from './images/space_ships/space_ship_6.png';
 import SpaceShip4 from './images/space_ships/space_ship_4.png';
 
 function App() {
-  const [shipAction, setShipAction] = useState();
-  const [transformScale, setTransformScale] = useState(175);
+  // const [shipAction, setShipAction] = useState();
+  // const [transformScale, setTransformScale] = useState(175);
+  const [shipProps, setShipProps] = useState({
+    action: "",
+    scale: "175px",
+  });
   
   const launchShip = () => {
-    setShipAction("launch");
-    console.log("launch click");
-    setTransformScale(75);
-    console.log("setTransformScale");
+    // setShipAction("launch");
+    // setTransformScale(75);
+    setShipProps({ action: "launch", scale: 75 });
+
+
   };
 
   const landShip = () => {
-    setShipAction("land");
-    console.log("land click");
-    setTransformScale(175);
-    console.log("setTransformScale");
+    // setShipAction("land");
+    // setTransformScale(175);
+    setShipProps({ action: "land", scale: 175 });
+
   };
 
   return (
@@ -46,7 +51,8 @@ function App() {
         /> */}
 
         <section className="env">
-          <SpaceShipObject scale={transformScale} launch={shipAction} />
+          {/* <SpaceShipObject scale={transformScale} launch={shipAction} /> */}
+          <SpaceShipObject scale={shipProps.scale} launch={shipProps.action} />
           <PlanetObject planet={Planet5} />
           <MoonObject moon={Moon} />
         </section>

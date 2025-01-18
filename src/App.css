@@ -26,12 +26,23 @@ body {
   width: 32rem;
   position: absolute;
   bottom: 0;
+  animation: rotate 50s linear infinite;
 }
 
 .moon {
   width: 12rem;
   position: absolute;
   margin-top: 2vh;
+  animation: rotate 50s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .portal-gun,
