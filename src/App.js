@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import Button from './components/Button';
+// import Button from './components/Button';
 import SpaceShipObject from './objects/SpaceShipObject';
 import PlanetObject from './objects/PlanetObject';
 import MoonObject from './objects/MoonObject';
@@ -15,21 +15,26 @@ import SpaceShip4 from './images/space_ships/space_ship_4.png';
 
 function App() {
   const [shipAction, setShipAction] = useState();
+  const [transformScale, setTransformScale] = useState(175);
   
   const launchShip = () => {
     setShipAction("launch");
     console.log("launch click");
+    setTransformScale(75);
+    console.log("setTransformScale");
   };
 
   const landShip = () => {
     setShipAction("land");
     console.log("land click");
+    setTransformScale(175);
+    console.log("setTransformScale");
   };
 
   return (
     <div className="App">
       <div className="space">
-        <button className={"portal-gun"} onClick={launchShip}>
+        <button className={"portal-gun"} type="button" onClick={launchShip}>
           <img src={PortalGun} alt="Portal gun" />
           <div>
             <label>Launch</label>
@@ -41,12 +46,12 @@ function App() {
         /> */}
 
         <section className="env">
-          <SpaceShipObject scale={10} launch={shipAction} />
+          <SpaceShipObject scale={transformScale} launch={shipAction} />
           <PlanetObject planet={Planet5} />
           <MoonObject moon={Moon} />
         </section>
 
-        <button className={"portal"} onClick={landShip}>
+        <button className={"portal"} type="button" onClick={landShip}>
           <img src={Portal} alt="Portal gun" />
           <div>
             <label>Land</label>

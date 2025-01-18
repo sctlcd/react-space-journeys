@@ -85,7 +85,6 @@ body {
   bottom: 6rem;
   z-index: 1;
   transform: rotate(-45deg);
-  width: 8.5rem;
 }
 
 button label {
@@ -100,9 +99,9 @@ button div {
 }
 
 .launch {
-  transform: translateY(-85vh);
+  transform: translateY(-76vh);
   transition: 7s ease-in;
-  opacity: 0;
+  /* opacity: 0.5; */
 }
 
 .land {
