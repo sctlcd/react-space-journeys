@@ -1,12 +1,55 @@
-# Getting Started with Create React App
+# [react-space-journeys](https://react-space-journeys.vercel.app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+<img src="https://github.com/sctlcd/react-space-journeys/blob/main/design/react-space-journeys-preview.png" alt="react-space-journeys" width="800">
+<br />
+
+---
+
+# Table of Contents <a name="tableOfContents"></a>
+
+1. [Introduction](#introduction)
+
+2. [Run the project locally](#runLocally)
+
+3. [Available Scripts](#availableScripts)
+
+4. [Deployment](#deployment)
+
+   - [Deployment – Run locally](#deploymentRunLocallydeploymentRunLocally)
+   - [Deployment – Live website](#deploymentLiveWebsite)
+
+5. [Credits](#credits)
+
+   - [Media](#media)
+
+---
+
+## Introduction <a name="introduction"></a>
+
+Back to [top](#tableOfContents)
+
+---
+
+## Run the project locally <a name="#runLocally"></a>
+
+- Runs the app in the development mode.\
+  Open http://localhost:3000 to view it in the browser.
+  ```
+  cd react-space-journeys
+  npm i
+  npm start
+  ```
+
+Back to [top](#tableOfContents)
+
+---
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,12 +57,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,7 +67,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
@@ -39,32 +77,161 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Back to [top](#tableOfContents)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment <a name="#deployment"></a>
 
-### Code Splitting
+### Deployment – Run locally <a name="#deploymentRunLocally"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Prerequisite:
+   - Make sure [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) are installed on your computer. You can download both at nodejs.org (NPM is included in your Node installation).
+   - Please see `.nvmrc` file at the root of `react-space-journeys` repo.
+   - Using nvm, a Node Version Manager is recommended as it helps you manage and switch between different Node versions with ease. It provides a command-line interface where you can install different versions with a single command, set a default, switch between them, etc. Here is [NVM for Windows](https://github.com/coreybutler/nvm-windows)
+2. In GitHub click on the repository nammed [react-space-journeys](https://github.com/sctlcd/react-space-journeys)
+3. Clone the repository locally. Run
 
-### Analyzing the Bundle Size
+   ```
+   git clone https://github.com/sctlcd/react-space-journeys.git
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Install all modules listed as dependencies in package.json
 
-### Making a Progressive Web App
+   ```
+   cd react-space-journeys
+   npm i
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   note: in this app
+   ...
 
-### Advanced Configuration
+5. Runs the app in the development mode.
+   Open http://localhost:3000 to view it in the browser.
+   ```
+   cd react-space-journeys
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Back to [top](#tableOfContents)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Deployment - Live Website <a name="#deploymentLiveWebsite"></a>
 
-### `npm run build` fails to minify
+#### Firebase <a name="#firebase"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[react-space-journeys](https://github.com/sctlcd/react-space-journeys) live website is currently deployed on [Firebase](https://firebase.google.com/) using the `main` branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely.
+
+1. Install Firebase CLI Tools, [firebase-tools](https://www.npmjs.com/package/firebase-tools)
+
+   ```
+   npm install -g firebase-tools
+   ```
+
+2. Create `firebase.json` and `.firebaserc` at the root of your project with the following content:
+
+   `firebase.json`:
+
+   ```
+   {
+     "hosting": {
+       "public": "build",
+       "ignore": [],
+       "rewrites": [
+         {
+           "source": "**",
+           "destination": "/index.html"
+         }
+       ]
+     }
+   }
+   ```
+
+   `.firebaserc`:
+
+   ```
+   {
+     "projects": {
+       "default": "<YOUR_FIREBASE_ID>"
+     }
+   }
+   ```
+
+3. After running `npm run build`, deploy using the command `firebase deploy`.
+
+=> live link: https://react-space-journeys.web.app/ (example link - not in use)
+
+Back to [top](#tableOfContents)
+
+#### Vercel <a name="#vercel"></a>
+
+[react-space-journeys](https://github.com/sctlcd/react-space-journeys) live website is currently deployed on [Vercel](https://vercel.com/) using the `main` branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely.
+
+1. Create a [Vercel](https://vercel.com/) account and/or log in to your [Vercel](https://vercel.com/) account
+
+2. Install Vercel package in the project:
+    ```
+    npm i vercel
+    ```
+
+3. Add a deploy script in the package.json file
+    ```
+    {
+      "scripts": {
+        // ...
+        "deploy": "vercel --prod"
+      },
+    }
+    ```
+
+4. To login run:
+    ```
+    npx vercel login
+    ```
+
+5. In the terminal run:
+    ```
+    npm run deploy
+    ```
+
+6. Follow the instructions
+    ```
+    $ npm run deploy
+
+    > react-space-journeys@0.1.0 deploy
+    > vercel --prod
+
+    Vercel CLI 34.2.0
+    ? Set up and deploy “D:\github\react-threejs\react-threejs-car-racing”? yes
+    ? Which scope do you want to deploy to? sctlcd's projects
+    ? Link to existing project? no
+    ? What’s your project’s name? react-space-journeys
+    ? In which directory is your code located? ./
+    Local settings detected in vercel.json:
+    Auto-detected Project Settings (Create React App):
+    - Build Command: react-scripts build
+    - Development Command: react-scripts start
+    - Install Command: `yarn install`, `pnpm install`, `npm install`, or `bun install`
+    - Output Directory: build
+    ? Want to modify these settings? no
+    🔗  Linked to sctlcds-projects/react-space-journeys (created .vercel and added it to .gitignore)
+    🔍  Inspect: https://vercel.com/sctlcds-projects/react-space-journeys/5ftNRUrzpM6NqrxTt1snhqnGLSFo
+    ✅  Production: https://react-space-journeys-ldxp3c4yq-sctlcds-projects.vercel.app
+    ```
+
+    => live link: https://react-space-journeys.vercel.app/
+
+Back to [top](#tableOfContents)
+
+---
+
+## Credits <a name="credits"></a>
+
+### Media <a name="media"></a>
+
+- []() - []() | copyright []()
+
+Back to [top](#tableOfContents)
+
+---
