@@ -85,10 +85,40 @@ body {
 
 .spaceShip4 {
   position: absolute;
-  margin-right: 80vw;
-  margin-bottom: 34vh;
+  margin-right: 60vw;
+  margin-bottom: 30vh;
   width: 6.25rem;
   transform: rotate(-15deg);
+}
+
+.spaceShip3 {
+  position: absolute;
+  margin-right: 30vw;
+  margin-bottom: 60vh;
+  width: 6.25rem;
+  transform: rotate(15deg);
+}
+
+.alien1 {
+  position: absolute;
+  margin-left: 50vw;
+  margin-bottom: 35vh;
+  width: 6.25rem;
+}
+
+.alien2 {
+  position: absolute;
+  margin-right: 82vw;
+  margin-bottom: 80vh;
+  width: 4.75rem;
+}
+
+.alien3 {
+  position: absolute;
+  margin-left: 35vw;
+  margin-bottom: 84vh;
+  width: 6.25rem;
+  transform: rotate(10deg);
 }
 
 .spaceship {
@@ -120,7 +150,7 @@ button div {
   transition: 4s ease-in-out;
 }
 
-/* --- */
+/* buttons */
 
 .btn {
   height: 4rem;

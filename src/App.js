@@ -4,7 +4,7 @@ import './App.css';
 import SpaceShipObject from './objects/SpaceShipObject';
 import PlanetObject from './objects/PlanetObject';
 import MoonObject from './objects/MoonObject';
-import Ship from './space_ship_1.png';
+import SpaceShip from './space_ship_1.png';
 import Planet5 from './images/planets/planet_5.png';
 import Moon from './images/planets/planet_3.png';
 import PortalGun from './images/portal_gun.png';
@@ -12,6 +12,10 @@ import Portal from './images/portal.png';
 import Title from './images/title.png';
 import SpaceShip6 from './images/space_ships/space_ship_6.png';
 import SpaceShip4 from './images/space_ships/space_ship_4.png';
+import SpaceShip3 from './images/space_ships/space_ship_3.png';
+import Alien1 from './images/aliens/alien_1.png';
+import Alien2 from './images/aliens/alien_2.png';
+import Alien3 from './images/aliens/alien_3.png';
 import Rick from './images/rick.png';
 
 function App() {
@@ -28,7 +32,7 @@ function App() {
     setShipProps({ action: "launch", scale: 75 });
   };
 
-  const [shipType, setShipType] = useState(Ship);
+  const [shipType, setShipType] = useState(SpaceShip);
   const landShip = () => {
     // setShipAction("land");
     // setTransformScale(175);
@@ -39,11 +43,11 @@ function App() {
     if (shipProps.action === "land") {
       setShipType(Rick);
       setTimeout(() => {
-        setShipType(Ship);
+        setShipType(SpaceShip);
       }, 4500);
     }
     if (shipProps.action === "launch") {
-      setShipType(Ship);
+      setShipType(SpaceShip);
     }
   }, [shipProps.action]);
 
@@ -82,6 +86,10 @@ function App() {
         <img src={Title} alt="title" className="title" />
         <img src={SpaceShip6} alt="space ship 6" className="spaceShip6" />
         <img src={SpaceShip4} alt="space ship 4" className="spaceShip4" />
+        <img src={SpaceShip3} alt="space ship 3" className="spaceShip3" />
+        <img src={Alien1} alt="alien 1" className="alien1" />
+        <img src={Alien2} alt="alien 2" className="alien2" />
+        <img src={Alien3} alt="alien 3" className="alien3" />
       </div>
     </div>
   );
