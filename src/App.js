@@ -19,7 +19,7 @@ function App() {
   // const [transformScale, setTransformScale] = useState(175);
   const [shipProps, setShipProps] = useState({
     action: "",
-    scale: "175px",
+    scale: "200px",
   });
   
   const launchShip = () => {
@@ -32,12 +32,15 @@ function App() {
   const landShip = () => {
     // setShipAction("land");
     // setTransformScale(175);
-    setShipProps({ action: "land", scale: 175 });
+    setShipProps({ action: "land", scale: 200 });
   };
 
   useEffect(() => {
     if (shipProps.action === "land") {
       setShipType(Rick);
+      setTimeout(() => {
+        setShipType(Ship);
+      }, 4500);
     }
     if (shipProps.action === "launch") {
       setShipType(Ship);

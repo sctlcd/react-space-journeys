@@ -111,13 +111,13 @@ button div {
 
 .launch {
   transform: translateY(-76vh);
-  transition: 7s ease-in;
-  /* opacity: 0.5; */
+  transition: 4s ease-in;
+  /* opacity: 0; */ /* make the ship fade -> simulate the landing on the moon */
 }
 
 .land {
   transform: translateY(0);
-  transition: 7s ease-in-out;
+  transition: 4s ease-in-out;
 }
 
 /* --- */
