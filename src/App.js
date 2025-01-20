@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 // import Button from './components/Button';
 import SpaceShipObject from './objects/SpaceShipObject';
 import PlanetObject from './objects/PlanetObject';
 import MoonObject from './objects/MoonObject';
-// import Ship from './images/space_ship_3.png';
+import Ship from './space_ship_1.png';
 import Planet5 from './images/planets/planet_5.png';
 import Moon from './images/planets/planet_3.png';
 import PortalGun from './images/portal_gun.png';
@@ -12,6 +12,7 @@ import Portal from './images/portal.png';
 import Title from './images/title.png';
 import SpaceShip6 from './images/space_ships/space_ship_6.png';
 import SpaceShip4 from './images/space_ships/space_ship_4.png';
+import Rick from './images/rick.png';
 
 function App() {
   // const [shipAction, setShipAction] = useState();
@@ -25,16 +26,23 @@ function App() {
     // setShipAction("launch");
     // setTransformScale(75);
     setShipProps({ action: "launch", scale: 75 });
-
-
   };
 
+  const [shipType, setShipType] = useState(Ship);
   const landShip = () => {
     // setShipAction("land");
     // setTransformScale(175);
     setShipProps({ action: "land", scale: 175 });
-
   };
+
+  useEffect(() => {
+    if (shipProps.action === "land") {
+      setShipType(Rick);
+    }
+    if (shipProps.action === "launch") {
+      setShipType(Ship);
+    }
+  }, [shipProps.action]);
 
   return (
     <div className="App">
@@ -52,7 +60,7 @@ function App() {
 
         <section className="env">
           {/* <SpaceShipObject scale={transformScale} launch={shipAction} /> */}
-          <SpaceShipObject scale={shipProps.scale} launch={shipProps.action} />
+          <SpaceShipObject changeShip={shipType} scale={shipProps.scale} launch={shipProps.action} />
           <PlanetObject planet={Planet5} />
           <MoonObject moon={Moon} />
         </section>
