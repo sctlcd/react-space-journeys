@@ -23,9 +23,11 @@ yarn-debug.log*
 yarn-error.log*
 
 App2.css
-.vercel
 
 # Firebase files
 .firebaserc
 .firebase
+
+# Vercel files
 .vercel
+
