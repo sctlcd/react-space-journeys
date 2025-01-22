@@ -83,6 +83,7 @@ body {
   top: 19rem;
   width: 10rem;
   transform: rotate(-10deg);
+  animation: tilt-shaking 2s infinite;
 }
 
 .spaceShip4 {
@@ -91,6 +92,7 @@ body {
   margin-bottom: 30vh;
   width: 6.25rem;
   transform: rotate(-15deg);
+  animation: horizontal-shaking 2s infinite;
 }
 
 .spaceShip3 {
@@ -99,6 +101,7 @@ body {
   margin-bottom: 60vh;
   width: 6.25rem;
   transform: rotate(15deg);
+  animation: tilt-n-move-shaking 2s infinite;
 }
 
 .alien1 {
@@ -106,6 +109,7 @@ body {
   margin-left: 50vw;
   margin-bottom: 35vh;
   width: 6.25rem;
+  animation: skew-x-shaking 0.5s infinite;
 }
 
 .alien2 {
@@ -113,6 +117,7 @@ body {
   margin-right: 82vw;
   margin-bottom: 80vh;
   width: 4.75rem;
+  animation: tilt-shaking 2s infinite;
 }
 
 .alien3 {
@@ -121,6 +126,49 @@ body {
   margin-bottom: 84vh;
   width: 6.25rem;
   transform: rotate(10deg);
+  animation: tilt-shaking 1s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+ }
+
+ @keyframes skew-x-shaking {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }
+ }
+
+ @keyframes skew-y-shaking {
+  0% { transform: skewY(-15deg); }
+  5% { transform: skewY(15deg); }
+  10% { transform: skewY(-15deg); }
+  15% { transform: skewY(15deg); }
+  20% { transform: skewY(0deg); }
+  100% { transform: skewY(0deg); }
+ }
+
+ @keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
 }
 
 button label {
