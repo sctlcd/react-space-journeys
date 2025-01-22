@@ -45,7 +45,7 @@ body {
   }
 }
 
-.portal-gun,
+.portalGun,
 .portal {
   margin-bottom: 3vh;
   background-color: black;
@@ -55,13 +55,13 @@ body {
   padding: 1rem;
 }
 
-.portal-gun:hover,
+.portalGun:hover,
 .portal:hover {
   box-shadow: 0 0 0.55rem 0.55rem rgb(52, 84, 20);
   cursor: pointer;
 }
 
-.portal-gun img {
+.portalGun img {
   width: 6.25rem;
 }
 
@@ -95,7 +95,7 @@ body {
 
 .spaceShip3 {
   position: absolute;
-  margin-right: 30vw;
+  margin-right: 40vw;
   margin-bottom: 60vh;
   width: 6.25rem;
   transform: rotate(15deg);
@@ -137,6 +137,7 @@ button div {
 .launch {
   transform: translateY(-76vh);
   transition: 4s ease-in;
+  color: #ffffff;
   /* opacity: 0; */ /* make the ship fade -> simulate the landing on the moon */
 }
 
@@ -145,10 +146,10 @@ button div {
   transition: 4s ease-in-out;
 }
 
-.btn {
+/* .btn {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
   margin-bottom: 20vh;
   border: 0.125rem solid #000000;
-}
+} */

@@ -4,7 +4,7 @@ import './App.css';
 import SpaceShipObject from './objects/SpaceShipObject';
 import PlanetObject from './objects/PlanetObject';
 import MoonObject from './objects/MoonObject';
-import SpaceShip from './space_ship_1.png';
+import SpaceShip from './images/space_ships/space_ship_1.png';
 import Planet5 from './images/planets/planet_5.png';
 import Moon from './images/planets/planet_3.png';
 import PortalGun from './images/portal_gun.png';
@@ -54,15 +54,17 @@ function App() {
   return (
     <div className="App">
       <div className="space">
-        <button className={"portal-gun"} type="button" onClick={launchShip}>
+        <button className={"portalGun"} type="button" onClick={launchShip}>
           <img src={PortalGun} alt="Portal gun" />
           <div>
             <label>Launch</label>
           </div>
         </button>
-        {/* <Button 
+        {/* <Button
           text="Launch" 
-          btnClass={"btn-danger"}
+          btnClass={"portalGun"}
+          icon={}
+          onClick={launchShip}
         /> */}
 
         <section className="env">
@@ -78,9 +80,11 @@ function App() {
             <label>Land</label>
           </div>
         </button>
-        {/* <Button 
-          text="Land" 
-          btnClass={"btn-info"} 
+        {/* <Button
+          text="Land"
+          btnClass={"portal"}
+          icon={}
+          onClick={landShip}
         /> */}
 
         <img src={Title} alt="title" className="title" />
