@@ -26,7 +26,7 @@ body {
   width: 32rem;
   position: absolute;
   bottom: 0;
-  animation: rotate 50s linear infinite;
+  animation: rotate 60s linear infinite;
 }
 
 .moon {
@@ -77,13 +77,13 @@ body {
   width: 19rem;
 }
 
-.spaceShip6 {
+.spaceShip3 {
   position: absolute;
-  margin-left: 80vw;
-  top: 19rem;
-  width: 10rem;
-  transform: rotate(-10deg);
-  animation: tilt-shaking 2s infinite;
+  margin-right: 40vw;
+  margin-bottom: 60vh;
+  width: 6.25rem;
+  transform: rotate(15deg);
+  animation: tilt-n-move-shaking 4s infinite;
 }
 
 .spaceShip4 {
@@ -92,16 +92,16 @@ body {
   margin-bottom: 30vh;
   width: 6.25rem;
   transform: rotate(-15deg);
-  animation: horizontal-shaking 2s infinite;
+  animation: tilt-shaking 4s infinite;
 }
 
-.spaceShip3 {
+.spaceShip6 {
   position: absolute;
-  margin-right: 40vw;
-  margin-bottom: 60vh;
-  width: 6.25rem;
-  transform: rotate(15deg);
-  animation: tilt-n-move-shaking 2s infinite;
+  margin-left: 80vw;
+  top: 19rem;
+  width: 10rem;
+  transform: rotate(-10deg);
+  animation: tilt-shaking 4s infinite;
 }
 
 .alien1 {
@@ -109,7 +109,7 @@ body {
   margin-left: 50vw;
   margin-bottom: 35vh;
   width: 6.25rem;
-  animation: skew-x-shaking 0.5s infinite;
+  animation: skew-x-shaking 0.2s infinite;
 }
 
 .alien2 {
@@ -117,7 +117,7 @@ body {
   margin-right: 82vw;
   margin-bottom: 80vh;
   width: 4.75rem;
-  animation: tilt-shaking 2s infinite;
+  animation: horizontal-shaking 5s infinite;
 }
 
 .alien3 {
@@ -126,13 +126,13 @@ body {
   margin-bottom: 84vh;
   width: 6.25rem;
   transform: rotate(10deg);
-  animation: tilt-shaking 1s infinite;
+  animation: tilt-shaking 5s infinite;
 }
 
 @keyframes tilt-shaking {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(5deg); }
-  50% { transform: rotate(0eg); }
+  50% { transform: rotate(5deg); }
   75% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
@@ -146,10 +146,10 @@ body {
  }
 
  @keyframes skew-x-shaking {
-  0% { transform: skewX(-15deg); }
-  5% { transform: skewX(15deg); }
-  10% { transform: skewX(-15deg); }
-  15% { transform: skewX(15deg); }
+  0% { transform: skewX(-5deg); }
+  5% { transform: skewX(5deg); }
+  10% { transform: skewX(-5deg); }
+  15% { transform: skewX(5deg); }
   20% { transform: skewX(0deg); }
   100% { transform: skewX(0deg); }
  }
