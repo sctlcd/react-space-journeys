@@ -69,7 +69,12 @@ function App() {
 
         <section className="env">
           {/* <SpaceShipObject scale={transformScale} launch={shipAction} /> */}
-          <SpaceShipObject changeShip={shipType} scale={shipProps.scale} launch={shipProps.action} />
+          <SpaceShipObject 
+            changeShip={shipType} 
+            scale={shipProps.scale} 
+            launch={shipProps.action} 
+            className={"spaceShip"} 
+          />
           <PlanetObject planet={Planet5} />
           <MoonObject moon={Moon} />
         </section>
