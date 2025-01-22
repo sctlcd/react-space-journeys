@@ -27,6 +27,10 @@
 
 ## Introduction <a name="introduction"></a>
 
+Creating a Rick and Morty's space journey using [React](https://reactjs.org/).
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 Back to [top](#tableOfContents)
 
 ---
@@ -230,7 +234,21 @@ Back to [top](#tableOfContents)
 
 ### Media <a name="media"></a>
 
-- []() - []() | copyright []()
+- [alien_1](https://www.vecteezy.com/png/54484327-alien-space-cartoon) - [Vecteezy](https://www.vecteezy.com/) | copyright [Idalba Granada](https://www.vecteezy.com/members/studiogstock)
+- [alien_2](https://www.vecteezy.com/png/54484331-alien-on-asteroid) - [Vecteezy](https://www.vecteezy.com/) | copyright [Idalba Granada](https://www.vecteezy.com/members/studiogstock)
+- [alien_3](https://www.vecteezy.com/png/54716481-astronaut-encounters-multi-eyed-space-organism) - [Vecteezy](https://www.vecteezy.com/) | copyright [Kenil Rafaliya](https://www.vecteezy.com/members/vectorboss009)
+- [space_ship_1](https://www.vecteezy.com/png/48421954-3d-rendering-of-vibrant-orange-rocket-on-transparent) - [Vecteezy](https://www.vecteezy.com/) | copyright [dan putra](https://www.vecteezy.com/members/111954954489864215394)
+- [space_ship_3](https://www.vecteezy.com/png/54484321-alien-in-a-ufo) - [Vecteezy](https://www.vecteezy.com/) | copyright [Idalba Granada](https://www.vecteezy.com/members/studiogstock)
+- [space_ship_4](https://www.vecteezy.com/png/23673673-green-alien-spaceship-ufo-ai-generative) - [Vecteezy](https://www.vecteezy.com/) | copyright [Aleksander Polanowski](https://www.vecteezy.com/members/ap301805665560)
+- [space_ship_6](https://www.vecteezy.com/png/36572296-ufo-unidentified-flying-object-with-green-alien-inside-creatures-from-outside-planet-earth) - [Vecteezy](https://www.vecteezy.com/) | copyright [Kwee Amanda Alamsyah
+](https://www.vecteezy.com/members/amandalamsyah)
+- [planet_3](https://www.vecteezy.com/png/37927286-ai-generated-fictional-3d-cartoon-planets-isolated-on-transparent-background) - [Vecteezy](https://www.vecteezy.com/) | copyright [sm wizard](https://www.vecteezy.com/members/sm_wizard)
+- [planet_5](https://www.vecteezy.com/png/37929126-ai-generated-fictional-3d-cartoon-planets-isolated-on-transparent-background) - [Vecteezy](https://www.vecteezy.com/) | copyright [sm wizard](https://www.vecteezy.com/members/sm_wizard)
+- [title](https://www.freepnglogos.com/images/rick-and-morty-31015.html) - [Freepnglogos](https://www.freepnglogos.com/) | copyright [	John D.](https://www.freepnglogos.com/images/rick-and-morty-31015.html#user)
+- [rick](https://www.freepnglogos.com/images/rick-and-morty-30998.html) - [Freepnglogos](https://www.freepnglogos.com/) | copyright [	John D.](https://www.freepnglogos.com/images/rick-and-morty-31015.html#user)
+- [portal](https://www.pngkey.com/detail/u2q8u2q8a9o0u2e6_portal-gun-rick-and-morty-portal-gun-rick/) - [pngkey](https://www.pngkey.com/) | copyright [Perler Beads](https://www.pngkey.com/detail/u2q8u2q8a9o0u2e6_portal-gun-rick-and-morty-portal-gun-rick/)
+- [portal_gun](https://www.pngkey.com/detail/u2q8a9w7t4r5a9q8_rick-and-morty-png-portal-rick-and-morty/) - [pngkey](https://www.pngkey.com/) | copyright [Png](https://www.pngkey.com/detail/u2q8a9w7t4r5a9q8_rick-and-morty-png-portal-rick-and-morty/)
+- [favicon.ico](https://www.flaticon.com/free-icon/planet_2240744?term=space&page=1&position=18&origin=search&related_id=2240744) - [Flaticon](https://www.flaticon.com/) - [smalllikeart](https://www.flaticon.com/authors/smalllikeart)
 
 Back to [top](#tableOfContents)
 
