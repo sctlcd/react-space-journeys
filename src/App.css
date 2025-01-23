@@ -97,8 +97,8 @@ body {
 
 .spaceShip6 {
   position: absolute;
-  margin-left: 80vw;
-  /* top: 19rem; */
+  margin-left: 75vw;
+  top: 19rem;
   width: 10rem;
   transform: rotate(-10deg);
   animation: tilt-shaking 4s infinite;
@@ -278,38 +278,32 @@ button div {
   }
 
   .launch {
-    transform: translateY(-78vh);
+    transform: translateY(-75vh);
   }
 }
 
 @media only screen and (max-width: 700px) {
   .title {
-    margin-right: 56vw;
-    width: 15rem;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .title {
     margin-right: auto;
-    width: 12rem;
+    width: 15rem;
   }
 
   .moon {
-    width: 7rem;
-    margin-top: 8vh;
+    width: 8rem;
+    margin-top: 11vh;
   }
 
   .planet {
-    width: 15rem;
+    width: 20rem;
+    bottom: 3rem;
   }
 
   .portalGun img {
-    width: 2.5rem;
+    width: 3.5rem;
   }
   
   .portal img {
-    width: 2rem;
+    width: 1.7rem;
   }
 
   .portal,
@@ -319,7 +313,7 @@ button div {
   }
 
   button label {
-    margin: 0.5rem 0;
+    margin: 0;
     font-size: x-small;
   }
 
@@ -330,13 +324,92 @@ button div {
 
   .alien2 {
     width: 2.5rem;
-    margin-bottom: 78vh;
+    margin-bottom: 73vh;
   }
 
   .alien3 {
     width: 3rem;
     margin-left: 55vw;
-    margin-bottom: 80vh;
+    margin-bottom: 78vh;
+  }
+
+  .spaceShip3 {
+    width: 4rem;
+    margin-bottom: 50vh;
+  }
+
+  .spaceShip4 {
+    margin-right: 65vw;
+    width: 4rem;
+    margin-bottom: 25vh;
+  }
+
+  .spaceShip6 {
+    margin-left: 50vw;
+    width: 6rem;
+    margin-bottom: 60vh;
+    top: 23rem;
+  }
+
+  .spaceShip {
+    bottom: 150px;
+    width: 90px !important;
+  }
+
+  .launch {
+    transform: translateY(-66vh);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    margin-right: auto;
+    width: 12rem;
+  }
+
+  .moon {
+    width: 7rem;
+    margin-top: 9vh;
+  }
+
+  .planet {
+    width: 15rem;
+    bottom: 3rem;
+  }
+
+  .portalGun img {
+    width: 2.5rem;
+  }
+  
+  .portal img {
+    width: 1.1rem;
+  }
+
+  .portal,
+  .portalGun {
+    margin-bottom: 0vh;
+    padding: 0.6rem;
+  }
+
+  button label {
+    margin: 0;
+    font-size: x-small;
+  }
+
+  .alien1 {
+    width: 3.5rem;
+    margin-bottom: 38vh;
+  }
+
+  .alien2 {
+    width: 2.5rem;
+    margin-bottom: 73vh;
+  }
+
+  .alien3 {
+    width: 3rem;
+    margin-left: 55vw;
+    margin-bottom: 78vh;
   }
 
   .spaceShip3 {
@@ -354,14 +427,15 @@ button div {
     margin-left: 50vw;
     width: 6rem;
     margin-bottom: 60vh;
+    top: 23rem;
   }
 
   .spaceShip {
-    bottom: 50px;
-    width: 70px !important;
+    bottom: 130px;
+    width: 65px !important;
   }
 
   .launch {
-    transform: translateY(-81vh);
+    transform: translateY(-72vh);
   }
 }
