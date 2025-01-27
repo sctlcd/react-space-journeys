@@ -200,14 +200,6 @@ button div {
   transition: 4s ease-in-out;
 }
 
-/* .btn {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  margin-bottom: 20vh;
-  border: 0.125rem solid #000000;
-} */
-
 /*******************************Media queries ********************/
 
 @media only screen and (max-width: 1500px) {
@@ -258,7 +250,8 @@ button div {
   }
 
   .spaceShip {
-    bottom: 140px;
+    bottom: 150px;
+    width: 100px !important;
   }
 
   .planet {
@@ -266,7 +259,7 @@ button div {
   }
   
   .moon {
-    width: 10rem;
+    width: 11rem;
   }
 
   .portalGun img {
@@ -278,7 +271,7 @@ button div {
   }
 
   .launch {
-    transform: translateY(-75vh);
+    transform: translateY(-73vh);
   }
 }
 
@@ -289,12 +282,12 @@ button div {
   }
 
   .moon {
-    width: 8rem;
+    width: 9rem;
     margin-top: 11vh;
   }
 
   .planet {
-    width: 20rem;
+    width: 21rem;
     bottom: 3rem;
   }
 
@@ -368,12 +361,12 @@ button div {
   }
 
   .moon {
-    width: 7rem;
+    width: 9rem;
     margin-top: 9vh;
   }
 
   .planet {
-    width: 15rem;
+    width: 18rem;
     bottom: 3rem;
   }
 
@@ -420,7 +413,7 @@ button div {
   .spaceShip4 {
     margin-right: 55vw;
     width: 4rem;
-    margin-bottom: 25vh;
+    margin-bottom: 28vh;
   }
 
   .spaceShip6 {
@@ -431,11 +424,11 @@ button div {
   }
 
   .spaceShip {
-    bottom: 130px;
-    width: 65px !important;
+    bottom: 140px;
+    width: 80px !important;
   }
 
   .launch {
-    transform: translateY(-72vh);
+    transform: translateY(-70vh);
   }
 }

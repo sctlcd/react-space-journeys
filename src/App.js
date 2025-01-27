@@ -23,7 +23,7 @@ function App() {
   // const [transformScale, setTransformScale] = useState(175);
   const [shipProps, setShipProps] = useState({
     action: "",
-    scale: "200px",
+    scale: "150px",
   });
   
   const launchShip = () => {
@@ -36,7 +36,7 @@ function App() {
   const landShip = () => {
     // setShipAction("land");
     // setTransformScale(175);
-    setShipProps({ action: "land", scale: 200 });
+    setShipProps({ action: "land", scale: 150 });
   };
 
   useEffect(() => {
