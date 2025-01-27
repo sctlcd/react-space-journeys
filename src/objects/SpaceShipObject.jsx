@@ -7,7 +7,6 @@ export default function SpaceShipObject({ changeShip, scale, launch}) {
       <img 
         src={changeShip}
         alt="space ship"
-        // style={{ position: "absolute", bottom: 0 , zIndex: 1, width: scale }}
         style={{ width: scale }}
         className={`spaceShip ${animation}`}
       />
